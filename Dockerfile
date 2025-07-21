@@ -1,6 +1,6 @@
 FROM node:20
 WORKDIR /app
 COPY . .
-RUN npm install
-RUN npm build
-CMD ["npm", "start"]
+RUN yarn install
+RUN yarn build
+CMD ["yarn", "start"]
