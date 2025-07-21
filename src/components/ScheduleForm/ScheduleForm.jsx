@@ -189,7 +189,7 @@ export function ScheduleForm({ selectedDate }) {
           </SelectContainer>
 
           {form.servico && (
-            <p className="text-gray-700 font-semibold">
+            <p className="text-white-700 font-semibold text-[#fff]">
               Preço do serviço: R$ {preco.toFixed(2)}
               {/* <br/>
               SKU: {skuMap[form.servico] || "SKU não disponível"} */}
