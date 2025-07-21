@@ -87,7 +87,7 @@ export function ScheduleForm({ selectedDate }) {
 
     try {
       const response = await fetch(
-        "https://n8n.chagassilva.com/webhook-test/agendamento",
+        "https://n8n.chagassilva.com/webhook/agendamento",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
