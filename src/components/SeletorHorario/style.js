@@ -4,21 +4,20 @@ export const MainContainer = styled.div`
   margin: 0 auto;
   max-width: 400px;
   width: 88%;
+  height:88%;
   padding: 20px;
   background-color: transparent; // cor de fundo suave
-  border-radius: 6px; // bordas arredondadas
-  //padding: 20px;
+  border-radius: 6px; // bordas arredondadas// 5 colunas iguais
   box-shadow: 0 4px 12px rgba(58, 57, 57, 0.1);
 `;
 
 // Contêiner que segura os horários em grid com 5 colunas e espaçamento
 export const HourContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); // 5 colunas iguais
+  display:grid;
+  grid-template-columns: repeat(5, 1fr); 
   gap: 15px;
   max-width: 600px;
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
 

@@ -107,7 +107,10 @@ export function ScheduleForm({ selectedDate }) {
         }
         alert(mensagem);
       } else if (data.status === "success") {
-        alert("Você será redirecionado para o pagamento.");
+        // Exibe alerta após 3 segundos
+        setTimeout(() => {
+          alert("Você será redirecionado para o pagamento");
+        }, 3000);
         window.location.href = data.productUrl || `https://pag.ae/${sku}`;
       } else {
         alert("Erro inesperado, tente novamente.");

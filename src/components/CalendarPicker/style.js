@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   flex-direction: column;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   max-width: 1300px;
   gap: 15px;
   h2 {

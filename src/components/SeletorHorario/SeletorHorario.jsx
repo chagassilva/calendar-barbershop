@@ -24,7 +24,9 @@ export default function SeletorHorario() {
         setIsLoading(true);
 
         const response = await fetch(
-          `https://sheets.googleapis.com/v4/spreadsheets/${import.meta.env.VITE_SHEET_ID}/values/Dados!E2:F100?key=${import.meta.env.VITE_GOOGLE_CLIENT_ID}`
+          `https://sheets.googleapis.com/v4/spreadsheets/${
+            import.meta.env.VITE_SHEET_ID
+          }/values/Dados!E2:F100?key=${import.meta.env.VITE_GOOGLE_CLIENT_ID}`
         );
 
         const data = await response.json();
@@ -55,8 +57,6 @@ export default function SeletorHorario() {
 
   return (
     <MainContainer>
-      {/* <h2>Horários disponíveis para hoje</h2> */}
-
       {isLoading ? (
         <p>Carregando...</p>
       ) : horarios.length === 0 ? (
@@ -64,12 +64,28 @@ export default function SeletorHorario() {
       ) : (
         <HourContainer>
           {horarios.map((hora, index) => (
-            <ButtonContainer key={index}>
-              {formatHorario(hora)}
-            </ButtonContainer>
+            <ButtonContainer key={index}>{formatHorario(hora)}</ButtonContainer>
           ))}
         </HourContainer>
       )}
     </MainContainer>
   );
 }
+
+//  return (
+//     <MainContainer>
+//       {/* <h2>Horários disponíveis para hoje</h2> */}
+
+//       {isLoading ? (
+//         <p>Carregando...</p>
+//       ) : horarios.length === 0 ? (
+//         <p>Nenhum horário disponível para hoje.</p>
+//       ) : (
+//         <HourContainer>
+//           {horarios.map((hora, index) => (
+//             <ButtonContainer key={index}>{formatHorario(hora)}</ButtonContainer>
+//           ))}
+//         </HourContainer>
+//       )}
+//     </MainContainer>
+//   );
