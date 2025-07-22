@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
   background-color: #d4a354;
   justify-content: center;
   align-items: center;
+
 `;
 
 export const CalendarPickerContainer = styled.div`
