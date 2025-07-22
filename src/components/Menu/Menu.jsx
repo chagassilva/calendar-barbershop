@@ -13,7 +13,7 @@ export default function Menu() {
         </a>
       </div>
       <nav className="menu-central">
-        <a href="https://calendar.chagassilva.com" className="btn-mainmenu">
+        <a href="https://barbershop.chagassilva.com" className="btn-mainmenu">
           <IoHomeSharp />
           Home
         </a>
